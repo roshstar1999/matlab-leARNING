@@ -1,0 +1,144 @@
+ctave:2> a=[3 7 7];
+octave:3> b=[2 3 9];
+octave:4> disp(a+b);
+    5   10   16
+octave:5> disp(a*b)
+error: operator *: nonconformant arguments (op1 is 1x3, op2 is 1x3)
+octave:5> disp(a*b);
+error: operator *: nonconformant arguments (op1 is 1x3, op2 is 1x3)
+octave:5> c=times(a,b);
+octave:6> disp(c);
+    6   21   63
+octave:7> disp(a-b);
+   1   4  -2
+octave:8> c=a\b;
+octave:9> disp(c);
+   0.056075   0.084112   0.252336
+   0.130841   0.196262   0.588785
+   0.130841   0.196262   0.588785
+octave:10> c=a/b;
+octave:11> disp(c);
+ 0.95745
+octave:12> a=[10,10];
+octave:13> b=[10,10];
+octave:14> a=[10 10];
+octave:15> b=[10 10];
+octave:16> c=a/b;
+octave:17> disp(c);
+ 1
+octave:18> c=a\b
+c =
+
+   0.50000   0.50000
+   0.50000   0.50000
+
+octave:19> c=zeroes(1,10);
+error: 'zeroes' undefined near line 1 column 3
+octave:19> c=zeros(1,10);
+octave:20> disp(c);
+   0   0   0   0   0   0   0   0   0   0
+octave:21> c=zeros(4);
+octave:22> disp(c);
+   0   0   0   0
+   0   0   0   0
+   0   0   0   0
+   0   0   0   0
+octave:23> c=zeros(2,4);
+octave:24> disp(c);
+   0   0   0   0
+   0   0   0   0
+octave:25> a=[4,6,7];
+octave:26> disp(a);
+   4   6   7
+octave:27> a=[4;6;7];
+octave:28> disp(a);
+   4
+   6
+   7
+octave:29> c=ones(2,4);
+octave:30> disp(c);
+   1   1   1   1
+   1   1   1   1
+octave:31> c=eyes(2,4);
+error: 'eyes' undefined near line 1 column 3
+octave:31> c=eyes(4,4);
+error: 'eyes' undefined near line 1 column 3
+octave:31> c=eye(4,4);
+octave:32> disp(c);
+Diagonal Matrix
+
+   1   0   0   0
+   0   1   0   0
+   0   0   1   0
+   0   0   0   1
+octave:33> a=[1 ,2 ,3];
+octave:34> b=[3,4,5];
+octave:35> plot(a,b);
+
+3
+3.5
+4
+4.5
+5
+1
+1.5
+2
+2.5
+3
+
+
+octave:36> a=[5,6];
+octave:37> b=[1,7];
+octave:38> plot(a,b);
+
+1
+2
+3
+4
+5
+6
+7
+5
+5.2
+5.4
+5.6
+5.8
+6
+
+
+octave:39> xlabel('time');
+
+1
+2
+3
+4
+5
+6
+7
+5
+5.2
+5.4
+5.6
+5.8
+6
+time
+
+
+octave:40> ylabel('amp');
+
+1
+2
+3
+4
+5
+6
+7
+5
+5.2
+5.4
+5.6
+5.8
+6
+amp
+time
+
